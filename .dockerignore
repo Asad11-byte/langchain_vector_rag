@@ -1,0 +1,14 @@
+.env
+.env.local
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.vscode/
+.idea/
+venv/
+.venv/
+tests/
+eval/results/
+*.md
+.DS_Store

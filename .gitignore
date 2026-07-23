@@ -1,0 +1,56 @@
+# --- Environment / secrets ---
+.env
+.env.local
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+ENV/
+
+# --- Virtual environments ---
+.python-version
+
+# --- IDE / editor ---
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Uploaded / temp files (don't commit user documents) ---
+app/uploads/
+tmp/
+*.pdf
+*.docx
+!eval/golden_dataset.json
+
+# --- Eval results (optional: keep if you want them versioned, ignore if large/noisy) ---
+# eval/results/*.json
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Build artifacts ---
+dist/
+build/
+*.egg-info/
+
+# --- Docker ---
+*.pid

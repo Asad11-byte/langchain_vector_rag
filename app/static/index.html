@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vector RAG</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📄 Document Q&A</h1>
+    <p class="subtitle">Upload PDFs or DOCs, then ask questions about them.</p>
+  </header>
+
+  <main>
+    <!-- Upload panel -->
+    <section class="panel" id="upload-panel">
+      <h2>Documents</h2>
+
+      <form id="upload-form">
+        <input type="file" id="file-input" accept=".pdf,.doc,.docx" required />
+        <button type="submit" id="upload-btn">Upload</button>
+      </form>
+      <p id="upload-status" class="status"></p>
+
+      <ul id="document-list"></ul>
+    </section>
+
+    <!-- Chat panel -->
+    <section class="panel" id="chat-panel">
+      <h2>Ask a question</h2>
+
+      <div id="chat-window"></div>
+
+      <form id="query-form">
+        <input type="text" id="question-input" placeholder="Ask something about your documents..." required />
+        <button type="submit" id="query-btn">Ask</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/static/js/upload.js"></script>
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

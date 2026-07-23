@@ -1,0 +1,38 @@
+# --- Web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9          # needed for file uploads
+jinja2==3.1.4                    # if using Jinja2Templates for the frontend
+
+# --- LangChain core ---
+langchain==0.3.1
+langchain-community==0.3.1
+langchain-core>=0.3.15,<0.4.0
+langchain-groq==0.2.0          # swap/add langchain-anthropic if using Claude for generation
+langchain-qdrant==0.2.0
+
+# --- Vector store (hybrid dense + sparse) ---
+qdrant-client==1.11.2
+fastembed==0.3.6                 # sparse (BM25/SPLADE) — needed for hybrid search, keep
+
+# --- Document parsing (lightweight loaders only) ---
+pypdf==4.3.1                     # PDF loader
+docx2txt==0.8                    # DOCX loader
+
+# --- Supabase ---
+supabase==2.7.4
+
+# --- Utilities ---
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+tiktoken==0.7.0
+
+# --- Optional: if using Anthropic models instead of / alongside nAI ---
+# langchain-anthropic==0.2.0
+# anthropic==0.34.2
+
+# --- Heavier / optional packages moved to requirements-extra.txt ---
+# unstructured, sentence-transformers, cohere, ragas, datasets
+# Install those only when you're ready to work on reranking/eval:
+#     pip install -r requirements-extra.txt

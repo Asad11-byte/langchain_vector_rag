@@ -1,0 +1,12 @@
+[
+  {
+    "question": "Replace with a real question about your uploaded document",
+    "ground_truth": "Replace with the correct/expected answer",
+    "relevant_chunk_hints": "Optional: a keyword or phrase that should appear in the retrieved context"
+  },
+  {
+    "question": "Another example question",
+    "ground_truth": "Another example expected answer",
+    "relevant_chunk_hints": ""
+  }
+]
