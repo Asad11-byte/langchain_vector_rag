@@ -13,7 +13,7 @@ langchain-qdrant==0.2.0
 
 # --- Vector store (hybrid dense + sparse) ---
 qdrant-client==1.11.2
-fastembed==0.3.6                 # sparse (BM25/SPLADE) — needed for hybrid search, keep
+#fastembed==0.3.6                 # sparse (BM25/SPLADE) — needed for hybrid search, keep
 
 # --- Document parsing (lightweight loaders only) ---
 pypdf==4.3.1                     # PDF loader
