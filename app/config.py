@@ -16,13 +16,13 @@ class Settings(BaseSettings):
     embedding_model: str = "text-embedding-3-small"
 
     # --- Qdrant Cloud ---
-    qdrant_url: str
-    qdrant_api_key: str
+    qdrant_url: str=""
+    qdrant_api_key: str=""
     qdrant_collection_name: str = "rag_documents"
 
     # --- Supabase ---
-    supabase_url: str
-    supabase_key: str
+    supabase_url: str=""
+    supabase_key: str=""
     supabase_storage_bucket: str = "documents"
 
     # --- Reranker ---
